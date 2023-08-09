@@ -1,0 +1,16 @@
+.card{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.items{
+  width: 19.5%;
+  border: 2px solid black;
+}
+.items h3{
+  background-color: wheat;
+}
+.card div img{
+  width: 19vw;
+  height: 15vw;
+}

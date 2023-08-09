@@ -1,0 +1,113 @@
+
+
+
+<!-- <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+  <mat-icon>more_vert</mat-icon>
+</button>
+
+<mat-menu color="primary"  #menu="matMenu">
+  <button mat-menu-item>Cakes</button>
+  <button mat-menu-item>Cookies</button>
+  <button mat-menu-item>Snacks</button>
+</mat-menu>
+<br><br> -->
+
+
+<section class="sect sec1">
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://imgcdn.floweraura.com/tempting-truffle-cake-a_0.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://www.biggerbolderbaking.com/wp-content/uploads/2017/07/1C5A8967.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://1.bp.blogspot.com/-wypWzjglOA0/Yao6fS_D-uI/AAAAAAAAaGo/JhicoW_Gia0bhUdtSWfQSfTpKsrinA1BACNcBGAsYHQ/s2048/Kerala%2BTraditional%2Bsnacks%2B2.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</section>
+
+
+
+<section  class="container-fluid mt-4">
+  <h1>Cakes</h1>
+  <div class="d-flex flex-wrap ">
+    <div class="card m-1 mt-2" *ngFor="let data of cakesList" style="width: 24%;">
+      <img [src]="data.cakeimg" class="card-img-top" alt="..." width="100%" height="200px">
+      <div class="card-body">
+        <h2 class="card-title">{{data.cakename}}</h2>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Quantity {{data.cakeqty}} rs</small> <br>
+        <h6 class="text">Price {{data.cakepr| currency : 'INR'}}</h6>
+        </div>
+        <div class="foot text-center pt-1">
+          <button class="btn btn-outline-primary">Add to Cart</button>
+        </div>
+    </div>
+  </div>
+</section>
+
+<section  class="container-fluid mt-4">
+  <h1>Cookies</h1>
+  <div class="d-flex flex-wrap ">
+    <div class="card m-1 mt-2" *ngFor="let data of cookiesList" style="width: 24%;">
+      <img [src]="data.cookieimg" class="card-img-top" alt="..." width="100%" height="200px">
+      <div class="card-body">
+        <h2 class="card-title">{{data.cookiename}}</h2>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Quantity {{data.cookieqty}} rs</small> <br>
+        <h6 class="text">Price {{data.cookieprice | currency : 'INR'}}</h6>
+        </div>
+        <div class="foot text-center pt-1">
+          <button class="btn btn-outline-primary">Add to Cart</button>
+        </div>
+    </div>
+  </div>
+</section>
+
+
+<section  class="container-fluid mt-4">
+  <h1>Snacks</h1>
+  <div class="d-flex flex-wrap ">
+        <div class="card m-1 mt-2" *ngFor="let data of snacksList" style="width: 24%;">
+          <img [src]="data.snacksimg" class="card-img-top" alt="..." width="100%" height="200px">
+          <div class="card-body">
+            <h3 class="card-title">{{data.snacksname}}</h3>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Quantity:- {{data.snacksqty}}</small> <br>
+            <h6 class="text">Price: {{data.snacksprice | currency : 'INR'}}</h6>
+          </div>
+          <div class="foot text-center pt-1">
+            <button class="btn btn-outline-primary">Add to Cart</button>
+          </div>
+        </div>
+  </div>
+</section>
+
+
+<!-- <section>
+  <h3>Date: {{today | date : "fullDate"}}</h3>
+  <h3>Time: {{today | date : "fullTime"}}</h3>
+
+  <h5>{{000103.15000 | number}}</h5>
+
+  <h2>{{81000 | userdef : "Dinar" : 268 }}</h2>
+</section>
+
+
+<section class="rating" (mouseover)="show()">
+  <h2>{{customer}}</h2>
+</section> -->

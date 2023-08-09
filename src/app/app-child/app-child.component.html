@@ -1,0 +1,8 @@
+<h2>App Child Component</h2>
+
+<h3>{{inputData}}</h3>
+
+
+<input type="text" placeholder="data to parent" #op>
+
+<button (click)="newEvent.emit(op.value)">Submit</button>

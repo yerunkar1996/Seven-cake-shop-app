@@ -1,0 +1,15 @@
+<table style="text-align: center;">
+  <tr >
+    <th>Id</th>
+    <th>Image</th>
+    <th>Name</th>
+    <th>Phone No</th>
+  </tr>
+  <tr *ngFor="let data of UserData.users">
+    <td>{{data.id}}</td>
+    <td><img [src]="data.image" alt="" width="100px" height="100px"></td>
+    <td>{{data.firstName}} {{data.lastName}} {{data.maidenName}}</td>
+    <td>{{data.phone}}</td>
+    <td><button (click)="account(data.firstName)">Account</button></td>
+  </tr>
+</table>

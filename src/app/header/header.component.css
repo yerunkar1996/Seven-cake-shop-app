@@ -1,0 +1,45 @@
+nav
+{
+  margin: 0%;
+  background-color: black;
+}
+ul{
+  list-style-type: none;
+  display: flex;
+  padding: 1vw;
+  width: 40vw;
+  justify-content: space-evenly;
+}
+nav ul a{
+  color: aliceblue;
+}
+nav ul select
+{
+  border: none;
+  background-color: black;
+  color: white;
+}
+a{
+  text-decoration: none;
+  color: aliceblue;
+}
+ol{
+  position: absolute;
+  background-color: black;
+  list-style-type: none;
+  color: aliceblue;
+  /* opacity: 0.6; */
+}
+ol li{
+  margin-left: -30px;
+  list-style-position: inside;
+
+}
+li button{
+  width: 6vw;
+  color: aliceblue;
+  background-color: black;
+}
+li button:hover{
+  border: 2px solid white;
+}

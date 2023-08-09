@@ -1,0 +1,52 @@
+<nav (mouseleave)="hide(0)" class="nav d-flex justify-content-between">
+  <ul>
+    <li><a routerLink="/" >Home</a></li>
+
+    <li>
+    <button  (mouseover)="dropdown1()" > Product</button>
+      <ol *ngIf="status1 === 1" [style.zIndex]="zIndex">
+        <li >
+          <a routerLink="cat/cakes"><button> Cakes </button></a>
+        </li>
+        <li>
+          <a routerLink="cat/cookies"><button >Cookies</button></a>
+        </li>
+        <li>
+          <a routerLink="cat/snacks"><button >Snacks</button></a>
+        </li>
+      </ol>
+    </li>
+
+    <li><a routerLink="about" >About</a></li>
+
+    <li><a [routerLink]="'contact'" >Contact</a></li>
+
+    <li>
+      <button (mouseover)="dropdown2()" >Profile</button>
+      <ol *ngIf="status2 === 1" [style.zIndex]="zIndex">
+        <li>
+          <a routerLink="auth/signin" ><button>Sign In</button></a>
+        </li>
+        <li>
+          <a routerLink="auth/signup" ><button>Sign Up</button></a>
+        </li>
+        <li>
+          <a routerLink="user" ><button>Users</button></a>
+        </li>
+        <li><button >Sign Out</button></li>
+      </ol>
+    </li>
+  </ul>
+
+  <ul class="nav2 text-end w-25" style="color:aliceblue; font-size:20px; ">
+    <li  >
+      <i class="fa-solid fa-cart-shopping"></i>
+    </li>
+    <li>
+      <button (click)="openForm()">
+        <i class="fa-brands fa-product-hunt"></i>
+      </button>
+    </li>
+  </ul>
+
+</nav>

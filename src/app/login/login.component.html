@@ -1,0 +1,37 @@
+<p>login works!</p>
+
+<!-- <div class="form">
+     interpolation
+    <input type="text" #inp1 value={{val}} disabled={{dis}} style="color: {{col}}"><br> <br>
+
+    Propery Binding
+    <input type="text" [style.color]=col[1] #inp1 [value]=val [disabled]=dis><br> <br>
+
+    <button (click)="show()">Submit</button>
+
+</div> -->
+
+
+<!-- <div>
+    <input type="text" (keyup)="show1(inp1.value)" #inp1 placeholder="email"><br> <br>
+    <h4 *ngIf="display == 1">{{msg}}</h4>
+
+    <input type="password"  (keyup)="show2(inp2.value)" (keyup)="check()" #inp2 placeholder="password"><br> <br>
+    <h4 *ngIf="display2 == 1">{{msg}} length must be 8 digit</h4>
+
+    <button [disabled]=dis (click)="show(inp1.value, inp2.value)" >Submit</button>
+</div> -->
+
+<!-- <h2>{{msg}}</h2> -->
+
+
+
+<div>
+    <input type="text" (keyup)="show1(inp1.value,1)" #inp1 placeholder="email"><br> <br>
+    <h4 *ngIf="display == 1">{{msg}} email</h4>
+
+    <input type="password"  (keyup)="show1(inp2.value,2)"  #inp2 placeholder="password"><br> <br>
+    <h4 *ngIf="display2 == 1">{{msg}} password length must be 8 digit</h4>
+
+    <button [disabled]=dis (click)="login(inp1.value, inp2.value)" >Submit</button>
+</div>

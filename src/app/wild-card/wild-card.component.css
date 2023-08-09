@@ -1,0 +1,13 @@
+.page
+{
+  background-color: wheat;
+  width: 30vw;
+  border: 2px solid black;
+  color: tomato;
+  height: 20vw;
+  margin: auto;
+  padding-top: 7vw;
+  text-align: center;
+}
+
+

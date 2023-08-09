@@ -1,0 +1,37 @@
+
+
+<h2>Registration Form</h2>
+
+<form #register=ngForm (ngSubmit)="reg(register.value)">
+    <div>
+        <input type="text" placeholder="anter a name" name="Name" ngModel>
+    </div> <br>
+    <div>
+        <input type="number" placeholder="enter a mobile no" name="MobileNo" ngModel>
+    </div><br>
+    <div>
+        <input type="email" placeholder="enter a email" name="Email" ngModel>
+    </div><br>
+    <div>
+        <input type="text" placeholder="enter address" name="Address" ngModel>
+    </div><br>
+
+    <button type="submit">Submit</button>
+</form>
+
+
+
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Mobile no</th>
+        <th>Email</th>
+        <th>Address</th>
+    </tr>
+    <tr *ngFor="let d of RegFormData">
+        <td>{{d.Name}}</td>
+        <td>{{d.MobileNo}}</td>
+        <td>{{d.Email}}</td>
+        <td>{{d.Address}}</td>
+    </tr>
+</table>

@@ -1,0 +1,17 @@
+<div *ngFor="let data of Users.users">
+    <div *ngIf="UserName == data.firstName" style="display: flex; padding:15px">
+      <div class="details">
+        <h4>ID: {{data.id}}</h4>
+        <h4>Name: {{data.firstName}} {{data.lastName}} {{data.maidenName}}</h4>
+        <h4>Phone No: {{data.phone}}</h4>
+        <h4>Email: {{data.email}}</h4>
+        <h4>Age: {{data.age}}</h4>
+        <h4>Gender: {{data.gender}}</h4>
+        <h4>D.O.B: {{data.birthDate}}</h4>
+
+      </div>
+      <div class="imag">
+        <img [src]="data.image" alt="" width="250px" height="250px">
+      </div>
+    </div>
+  </div>

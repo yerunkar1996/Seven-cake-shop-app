@@ -1,0 +1,16 @@
+form
+{
+  width: 450px;
+  margin: auto;
+  background: linear-gradient(blue,yellow,pink);
+  border: 3px solid black;
+}
+
+form h2
+{
+  text-align: center;
+  color: aliceblue;
+}
+span{
+  color: red;
+}

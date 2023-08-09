@@ -1,0 +1,19 @@
+
+<form [formGroup]="feedbackForm" (ngSubmit)="feedback()" >
+  <h2>forms-validation works!</h2>
+<input type="text" placeholder="enter a name" formControlName="Name"> <br>
+<span *ngIf="Name && Name.invalid">this field is required</span>
+<br>
+
+<input type="email" placeholder="enter a email" formControlName="email"> <br>
+<span *ngIf="email && email.invalid">this field is required</span><br>
+
+<input type="number" placeholder="enter a mobileno" formControlName="mobileNo"> <br>
+<span *ngIf="mobileNo && mobileNo.invalid">this field is required</span><br>
+
+<label for="">Feedback</label> <br>
+<textarea cols="40" rows="6" formControlName="comment"></textarea>
+<br>
+<span *ngIf="comment && comment.invalid">this field is required</span><br>
+<button [disabled]="feedbackForm.invalid">Submit</button>
+</form>

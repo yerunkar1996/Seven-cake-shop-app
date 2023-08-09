@@ -1,0 +1,20 @@
+<div class="container b-3">
+  <h2>Cakes</h2>
+  <div class="row  row-cols-3 g-5 p-3">
+    <div class="col p-2" *ngFor="let data of cakesList" style="width: 25%;">
+      <div class="card-group" >
+        <img [src]="data.cakeimg" class="card-img-top" alt="..." width="100px" height="250px">
+        <div class="card-body">
+          <h2 class="card-title"> <b>{{data.cakename}}</b></h2>
+          <p class="card-text">Quantity: {{data.cakeqty}}</p>
+          <p class="card-text"><b>Price: {{data.cakepr}}</b></p>
+        </div>
+      </div>
+      <div class="cak text-center">
+        <button class="btn bg-primary">Add to Card</button>
+      </div>
+    </div>
+
+  </div>
+
+</div>

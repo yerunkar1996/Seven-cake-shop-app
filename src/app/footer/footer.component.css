@@ -1,0 +1,14 @@
+.foot{
+  background-color: black;
+  color: aliceblue;
+}
+.footer1{
+  display: flex;
+  justify-content: space-evenly;
+}
+.foot ul{
+  list-style-type: none;
+}
+ .icn{
+  margin: 5px;
+}
